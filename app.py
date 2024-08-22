@@ -20,7 +20,7 @@ data = response.text
 soup = BeautifulSoup(data, "html.parser")
 song_titles = []
 
-#getting all the songs from the given date
+
 songs = soup.select('h3.c-title.a-no-trucate.a-font-primary-bold-s.u-letter-spacing-0021')
 for song in songs:
     song_name = song.getText()
